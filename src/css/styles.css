@@ -1,0 +1,254 @@
+.home-background {
+  background-position: top center;
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 85vh;
+
+}
+
+.home-background::before {
+  content: '';
+  background-image: url("/src/img/banker.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 1;
+}
+
+.brand-text {
+  /*color: #24a464 !important;*/
+  background: -webkit-linear-gradient(#000080, #000080);
+ 
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  padding-left: 10px;
+}
+
+.brand-background {
+  /* bar on card is navy blue;*/
+  background-image: linear-gradient(#000080, #000080) !important;
+  color: #fff !important;
+  letter-spacing: 1px;
+}
+
+.brand-button {
+  background-image: linear-gradient(#000080, #000080) !important;
+  color: #fff !important;
+  border: 2px solid #24a464;
+}
+
+.brand-button:disabled { 
+  cursor: not-allowed;
+}
+
+.brand-button:hover {
+  background-image:  linear-gradient(#fff, #fff) !important;
+  color: #000080!important;
+  border: 2px solid #000080;
+}
+
+.brand-centered {
+  margin: auto;
+}
+
+.brand-margin-top {
+  margin-top: 80px; 
+}
+
+.brand-active {
+  border-bottom: 2px solid #000080;
+  border-top: 2px solid #000080;
+  border-bottom: 2px solid #000080;
+  border-top: 2px solid #000080;
+  color: #000080 !important;
+  font-weight: bold !important;
+  top: 0; 
+} 
+
+.nav-link.active{
+  /* Border around Nav is navy blue when active*/
+  border-bottom: 2px solid #000080;
+  border-top: 2px solid #000080;
+  border-left: 2px solid #000080;
+  border-right: 2px solid #000080;
+  background-color: solid #000080;
+  color: #000080 !important;
+  font-weight: bold !important;
+  top: 0;
+}
+
+
+.brand-table {
+  width: 100%;
+}
+
+.brand-table-th {
+  width: 30%;
+  border-bottom: 2px solid #14633b;
+  text-align: center;
+}
+
+.brand-table-td {
+  width: 30%;
+  border-bottom: 0.01em solid rgba(100, 112, 129, 0.25);
+  text-align: center;
+}
+
+.amount-input {
+  text-align: right;
+}
+
+.balance-container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.balance-title {
+  width: 50%;
+  float: left;
+}
+
+.balance-amount {
+  width: 50%;
+  margin-left: 200px;
+  text-align: right;
+  font-weight: bolder;
+}
+
+.label-title {
+  width: 50%;
+  float: left;
+  padding-top: 5px;
+}
+
+.amount-container {
+  width: 50%;
+  margin-left: 50%;
+}
+
+.brand-complimentary-color {
+  background-color: #ddeecb;
+}
+
+/*nav menu hover */
+#navbarNav ul li a,
+#navbarNav ul li a:after,
+#navbarNav ul li a:before {
+  /*transition: all 0.5s;*/
+
+  background-color: 2px solid #000080;
+  bottom: 0px;
+  content: " ";
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  transition: all 280ms ease-in-out; 
+}
+
+#navbarNav ul li a:hover {
+  color: #000080;
+  font-weight: bold;
+}
+
+/* collapse.navbar-collapse */
+#navbarNav.collapse.navbar-collapse ul li a {
+  position: relative;
+}
+#navbarNav.collapse.navbar-collapse ul li a:after,
+#navbarNav.collapse.navbar-collapse ul li a:before,
+#navbarNav ul li a:before,
+#navbarNav ul li a:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: ".";
+  color: transparent;
+  background-image: solid #000080;
+  height: 2px;
+}
+#navbarNav.collapse.navbar-collapse ul li a:hover:before,
+#navbarNav.collapse.navbar-collapse ul li a:hover:after {
+  width: 100%;
+}
+
+#navbarNav ul li a {
+  transition: all 1s;
+}
+
+#navbarNav ul li a:before,
+#navbarNav ul li a:after {
+  text-align: left;
+  content: ".";
+  margin: 0;
+  opacity: 0;
+}
+#navbarNav ul li a:hover {
+  color: #14633b;
+  z-index: 1;
+}
+
+#navbarNav ul li a:hover:before,
+#navbarNav ul li a:hover:after {
+  z-index: -10;
+  animation: fill 1s forwards; 
+  opacity: 1;
+}
+
+#navbarNav ul li a:hover:before {
+  bottom: auto !important;
+  top: 0;
+  width: 100% !important;
+}
+
+@media (min-width: 1400px) {
+.right {
+  margin: auto;
+  left: 40em;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  position: relative;
+  opacity: 1;
+  margin-top: 20px;
+}
+}
+
+@media (max-width: 575.98px) {
+  .right {
+    right: 0;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .right {
+    right: 0;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .right {
+    right: 0;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .right {
+    right: 0;
+  }
+}
+
+@media (max-width: 1399.98px) {
+  .right {
+    right: 0;
+  }
+}
