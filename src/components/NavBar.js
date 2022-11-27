@@ -30,13 +30,13 @@ function NavBar() {
         <Container>
           <Navbar.Brand href="#home">
             <img
-              alt=""
+              alt="logo"
               src="/img/safe.jpg"
               width="45"
               height="45"
               className="d-inline-block align-top"
             />{' '}
-                Bad Bank Of America
+                Bad Bank Of North America
           </Navbar.Brand>
         </Container>
       </div>

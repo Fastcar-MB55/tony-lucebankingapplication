@@ -7,8 +7,8 @@ function Home() {
           className="card mb-3"
           maxWidth="26rem"
           txtcolor="black"
-          header="Bad Bank of America"
-          title="Welcome to BadBank"
+          header="Bad Bank of North America"
+          title="Welcome to BadBank of North America"
           text="We purchased our Security Software Second Hand from Target."
           body={
             <img src="/img/safe.jpg" className="img-fluid" alt="Logo" />
